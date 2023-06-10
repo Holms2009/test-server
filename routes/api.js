@@ -18,13 +18,13 @@ function getAllPlayers(req, res) {
 }
 
 function addPlayer(req, res) {
-  // connection.execute(
-  //   'insert into players (playerName, playerRank, isInGuild) values ("Дошик", "Владелец", true)',
-  //   (err, results) => {
-  //     console.log(err);
-  //     console.log(results);
-  //   }
-  // )
+  connection.execute(
+    'insert into players (playerName, playerRank, isInGuild) values ("Дошик", "Владелец", true)',
+    (err, results) => {
+      console.log(err);
+      console.log(results);
+    }
+  )
 
   connection.end();
 }
