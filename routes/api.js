@@ -1,13 +1,32 @@
-const fs = require('fs');
-const appRoot = require('app-root-path');
+const mysql = require('mysql2');
 
-const usersPath = appRoot + '/data/users.json';
+const connection = mysql.createConnection({
+  host: 'localhost',
+  port: 3306,
+  user: 'root',
+  password: 'nightwatch7358',
+  database: 'goldenbananadb'
+})
 
-function sendAllUsers(req, res) {
-  const data = fs.readFileSync(usersPath, "utf-8");
-  const users = JSON.parse(data);
+function getAllPlayers(req, res) {
+  connection.execute('SELECT * FROM players', (err, results, fields) => {
+    res.end(JSON.stringify(results));
+  });
 
-  res.send(users);
+  connection.end();
 }
 
-module.exports = { sendAllUsers };
+function addPlayer(req, res) {
+  // connection.execute(
+  //   'insert into players (playerName, playerRank, isInGuild) values ("Дошик", "Владелец", true)',
+  //   (err, results) => {
+  //     console.log(err);
+  //     console.log(results);
+  //   }
+  // )
+
+  connection.end();
+}
+
+
+module.exports = { getAllPlayers, addPlayer };

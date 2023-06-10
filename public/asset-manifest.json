@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6e718332.css",
+    "main.js": "/static/js/main.158f8fea.js",
+    "static/media/banana-minion.png": "/static/media/banana-minion.67f1c29259ef67cdeb73.png",
+    "static/media/logo-text.svg": "/static/media/logo-text.d816b8b3abf3ffdf6a64.svg",
+    "static/media/ShopTitans_Logo_RGB.png": "/static/media/ShopTitans_Logo_RGB.0b0c41902b9d1c6b4918.png",
+    "static/media/background_shoptitans_landscape.jpg": "/static/media/background_shoptitans_landscape.3034a9ebfa126a137775.jpg",
+    "static/media/wallace.png": "/static/media/wallace.013fffa8ad3a087586ae.png",
+    "static/media/cursecasual.otf": "/static/media/cursecasual.d773029de52f194921d6.otf",
+    "static/media/one-banana.png": "/static/media/one-banana.954fcf5a45f84fc6fc36.png",
+    "static/media/goals.png": "/static/media/goals.cc161ea2d07e39b82c14.png",
+    "static/media/bugle3.png": "/static/media/bugle3.b27d499674c2884a31ee.png",
+    "static/media/item-bg.webp": "/static/media/item-bg.1c3b50f5a5de04a6d0d2.webp",
+    "static/media/plus.svg": "/static/media/plus.c7c57378257168c219f3.svg",
+    "static/media/close.svg": "/static/media/close.29d2da4f14ce9885c3fe.svg",
+    "index.html": "/index.html",
+    "static/media/triangle-up.svg": "/static/media/triangle-up.a9484f5f268c74f9cc6d.svg",
+    "static/media/triangle-down.svg": "/static/media/triangle-down.d24e968bab040d56cffa.svg",
+    "main.6e718332.css.map": "/static/css/main.6e718332.css.map",
+    "main.158f8fea.js.map": "/static/js/main.158f8fea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e718332.css",
+    "static/js/main.158f8fea.js"
+  ]
+}
