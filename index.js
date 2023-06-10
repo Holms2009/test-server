@@ -8,7 +8,7 @@ const port = 3003;
 
 server.use(express.static(__dirname + '/public'));
 server.use(cors({
-  origin: 'http://localhost:3003'
+  origin: '*'
 }))
 
 server.get('/', (req, res) => {
