@@ -1,10 +1,15 @@
 const express = require('express');
+const cors = require('cors');
+
 const { getAllPlayers, addPlayer } = require('./routes/api');
 
 const server = express();
 const port = 3003;
 
 server.use(express.static(__dirname + '/public'));
+server.use(cors({
+  origin: 'http://localhost:3003'
+}))
 
 server.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
